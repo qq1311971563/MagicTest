@@ -26,4 +26,27 @@ public class SolutionTest {
         }
         System.out.println(ret.val);
     }
+
+    @Test
+    public void lengthOfLongestSubstring() {
+        System.out.println(solution.lengthOfLongestSubstring(" "));
+        System.out.println(solution.lengthOfLongestSubstring("abcabcbb"));
+        System.out.println(solution.lengthOfLongestSubstring("bbbbb"));
+        System.out.println(solution.lengthOfLongestSubstring("pwwkew"));
+        System.out.println(solution.lengthOfLongestSubstring(""));
+    }
+
+    @Test
+    public void findMedianSortedArrays() {
+        int[] nums1={};
+        int[] nums2={2,3};
+        System.out.println(solution.findMedianSortedArrays(nums1,nums2));
+    }
+
+    @Test
+    public void numJewelsInStones() {
+        System.out.println(solution.numJewelsInStones("aA","aAAbbbb"));
+        System.out.println(solution.numJewelsInStones("z","ZZZ"));
+        System.out.println(solution.numJewelsInStones("ZZZ",""));
+    }
 }
